@@ -1,0 +1,430 @@
+p.active,
+a.active,
+h1.active,
+h3.active {
+    color: white;
+}
+
+.item.active {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0px 14px rgb(255, 0, 0);
+}
+
+.other .dispmode.active {
+    color: black;
+    background-color: white;
+    font-weight: 500;
+}
+
+.main {
+    background-image: url("https://xmple.com/wallpaper/red-gradient-blue-linear-3840x2160-c2-87cefa-8b0000-a-90-f-14.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main.active {
+    background-image: url("https://pics.craiyon.com/2023-07-12/0842b56697f24ddda410f54fcd292b4f.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    width: 4.5rem;
+}
+
+.other {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.other button {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.other .dispmode {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.other .login {
+    background-color: rgb(98, 96, 96);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1.5rem;
+}
+
+.other .allnews {
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.news {
+    padding: 2rem 7%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.item {
+    /* box-shadow: 0 0px 12px rgb(255, 0, 0); */
+    box-shadow: 0 0px 13px rgb(0, 0, 0);
+    padding: 1.5rem 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+body {
+    background-color: white;
+}
+
+.item img {
+    margin: 1rem 0;
+    border-radius: 15px;
+    height: 12rem;
+    object-fit: cover;
+}
+
+.item a {
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
+
+.item p {
+    align-self: start;
+    font-size: 0.85rem;
+}
+
+.item .desc {
+    margin-bottom: 1rem;
+}
+
+.item h3 {
+    font-size: 1.1rem;
+}
+
+.item .pub {
+    align-self: start;
+}
+
+.bars {
+    font-size: 1.4rem;
+    display: none;
+}
+
+.bars.active {
+    display: block;
+}
+
+/* ----------------login signup code-------------------- */
+
+.login1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    height: 99.6vh;
+    overflow: hidden;
+}
+
+.login1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/030/964/608/original/world-map-background-news-studio-background-for-news-report-and-breaking-news-on-world-live-report-free-video.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+}
+
+.signup {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    height: 99.6vh;
+    overflow: hidden;
+}
+
+.signup::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/030/964/608/original/world-map-background-news-studio-background-for-news-report-and-breaking-news-on-world-live-report-free-video.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+}
+
+.logsign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1.5rem 2rem;
+    padding-bottom: 2rem;
+    border-radius: 10px;
+    gap: 0.9rem;
+    width: 22rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.error {
+    font-size: 0.6rem;
+    color: red;
+    align-self: flex-start;
+    width: 100%;
+    border: 2px solid rgb(247, 163, 163);
+    padding: 0.4rem 0.4rem;
+    border-radius: 5px;
+    background-color: rgb(255, 230, 230);
+}
+
+.noerror {
+    display: none;
+}
+
+.logsign h1 {
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.epass {
+    width: 100%;
+    position: relative;
+}
+
+.epass label {
+    position: absolute;
+    top: 23%;
+    font-size: 0.77rem;
+    left: 5%;
+    z-index: 2;
+    transition: all 0.3s;
+    color: rgb(158, 157, 157);
+
+}
+
+.epass input {
+    width: 100%;
+    padding: 0.6rem 0.6rem;
+    border-radius: 5px;
+    border: 1px solid rgb(205, 204, 204);
+}
+
+.logsign input:focus {
+    outline: none;
+}
+
+.logsign input:focus+label,
+.logsign input:valid+label {
+    top: -17%;
+    background-color: white;
+    padding: 0rem 0.25rem;
+    font-size: 0.6rem;
+}
+
+.logsign a {
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: blue;
+}
+
+.logsign button {
+    width: 100%;
+    padding: 0.6rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: white;
+    background-color: #000c96;
+    border: none;
+    border-radius: 5px;
+}
+
+.logsign p {
+    font-size: 0.75rem;
+    color: rgb(110, 110, 110);
+}
+
+.logsign .google {
+    position: relative;
+    border: 1px solid rgb(205, 204, 204);
+    background-color: white;
+    color: rgb(171, 169, 169);
+    font-weight: 700;
+}
+
+.google img {
+    position: absolute;
+    left: 5%;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.or .line {
+    height: 1px;
+    background-color: rgb(228, 231, 231);
+    width: 45%;
+}
+
+/* -------------media queries-------------- */
+
+@media(max-width: 1200px) {
+    .news {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 1100px) {
+    .select {
+        font-size: 0.8rem;
+    }
+
+    .logo {
+        gap: 0.2rem;
+    }
+
+    .logo img {
+        width: 3.5rem;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .other .login {
+        font-size: 0.7rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .other .dispmode {
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width: 936px) {
+    .other {
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        right: 0;
+        height: calc(100vh - 88px);
+        padding: 1.5rem 2rem;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0px 7px rgba(0, 0, 0, 0.53);
+        border-top-left-radius: 7px;
+        transition: all 0.3s;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+    .other.active {
+        transform: scaleX(1);
+    }
+
+    .other.active.dark {
+        box-shadow: 0 0px 12px rgba(255, 255, 255, 0.53);
+    }
+
+    .bars {
+        display: block;
+    }
+
+    .news {
+        padding: 1.5rem 5%;
+    }
+}
+
+@media(max-width: 700px) {
+    .news {
+        padding: 1.5rem 4%;
+    }
+
+    .item h3 {
+        font-size: 1rem;
+    }
+
+    .item p {
+        font-size: 0.7rem;
+    }
+
+    .item a {
+        padding: 0.3rem 0.7rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 650px) {
+    .news {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1.5rem 10%;
+    }
+}
+
+@media(max-width: 450px) {
+    .news {
+        padding: 1.5rem 8.5%;
+    }
+}
+
+/* --------login signup media queries-------- */
+
+@media(max-width: 460px) {
+    .logsign {
+        width: 18rem;
+    }
+}
